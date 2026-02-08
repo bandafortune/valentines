@@ -1,0 +1,103 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: pink;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+.cat {
+    width: 200px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background: red;
+    color: white;
+}
+
+#noBtn {
+    background: gray;
+    color: white;
+}
+.buttons {
+    position: relative;
+    height: 200px;
+}
+
+#noBtn {
+    position: absolute;
+}
+
+.date-page {
+    background: pink;
+    background-image: url("https://www.transparenttextures.com/patterns/hearts.png");
+}
+
+.love-text {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.date-options {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.option {
+    text-align: center;
+}
+
+.option button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.date-gif {
+    width: 230px;
+    border-radius: 15px;
+}
+
+/* floating hearts for dinner GIF */
+.hearts {
+    position: relative;
+}
+
+.hearts::after {
+    content: "❤️ ❤️ ❤️";
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    left: 0;
+    animation: floatHearts 2s infinite;
+}
+
+@keyframes floatHearts {
+    0% { opacity: 0; transform: translateY(20px); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
